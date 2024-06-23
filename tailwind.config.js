@@ -14,8 +14,8 @@ module.exports = {
       
     },
     fontFamily: {
-      sans: ['Graphik', 'sans-serif'],
-      serif: ['Merriweather', 'serif'],
+      outfit: ['outfit', 'sans-serif'],
+      young_serif: ['young-serif', 'serif'],
       
     },
     extend: {
