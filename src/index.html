@@ -15,108 +15,181 @@
     <title>Frontend Mentor | Recipe page</title>
   </head>
   <body class="bg-eggshell">
-    <section class="mx-auto w-1/2 my-28 bg-white rounded-3xl">
-      <div class="p-10 text-wenge-brown font-outfit">
-        <img class="rounded-xl mb-10 font-young_serif" src="/assets/images/image-omelette.jpeg" alt="" />
-
-        <h1 class="text-[40px] font-bold text-dark-charcoal mb-6">Simple Omelette Recipe</h1>
-
-        <p >
-          An easy and quick dish, perfect for any meal. This classic omelette
-          combines beaten eggs cooked to perfection, optionally filled with your
-          choice of cheese, vegetables, or meats.
-        </p>
-
-        <div class="p-5 bg-dark-raspberry/10 my-8 rounded-xl">
-          <p class="text-dark-raspberry text-xl ">Preparation time</p>
-          <ul>
-            <li><b>Total</b>: Approximately 10 minutes</li>
-            <li><b>Preparation</b>: 5 minutes</li>
-            <li><b>Cooking</b>: 5 minutes</li>
-          </ul>
+    <section
+      class="flex flex-col mx-auto w-full md:w-1/2 md:my-28 bg-white rounded-3xl"
+    >
+      <div class="text-wenge-brown font-outfit">
+        <div class="p-0 md:px-10 md:pt-10">
+          <img
+            class="md:rounded-xl md:w-full"
+            src="/assets/images/image-omelette.jpeg"
+            alt=""
+          />
         </div>
+        <div class="p-8 md:p-10">
+          <h1
+            class="text-[36px] md:text-[40px] font-bold text-dark-charcoal font-young_serif mb-6 leading-none"
+          >
+            Simple Omelette Recipe
+          </h1>
 
-        <div>
-          <h2 class="text-brandy-red text-[28px]">Ingredients</h2>
-          <ul>
-            <li>2-3 large eggs</li>
-            <li>Salt, to taste</li>
-            <li>Pepper, to taste</li>
-            <li>1 tablespoon of butter or oil</li>
-            <li>
-              Optional fillings: cheese, diced vegetables, cooked meats, herbs
-            </li>
-          </ul>
-        </div>
+          <p>
+            An easy and quick dish, perfect for any meal. This classic omelette
+            combines beaten eggs cooked to perfection, optionally filled with
+            your choice of cheese, vegetables, or meats.
+          </p>
 
-        <hr class="my-8  border-white-coffee" />
+          <div class="p-5 bg-dark-raspberry/10 my-8 rounded-xl">
+            <p class="text-dark-raspberry text-xl font-semibold">
+              Preparation time
+            </p>
+            <ul
+              class="list-disc flex flex-col list-inside pt-4 pb-6 gap-2 marker:text-dark-raspberry"
+            >
+              <li><b>Total</b>: Approximately 10 minutes</li>
+              <li><b>Preparation</b>: 5 minutes</li>
+              <li><b>Cooking</b>: 5 minutes</li>
+            </ul>
+          </div>
 
-        <div>
-          <h2 class="text-brandy-red text-[28px]">Instructions</h2>
+          <div>
+            <h2 class="text-brandy-red text-[28px] font-young_serif font-bold">
+              Ingredients
+            </h2>
+            <ul
+              class="custom-disc flex flex-col gap-2 pt-6 marker:text-dark-raspberry "
+            >
+              <li class="flex items-center">
+                <div>2-3 large eggs</div>
+              </li>
+              <li class="flex items-center">
+                <div>Salt, to taste</div>
+              </li>
+              <li class="flex items-center">
+                <div>Pepper, to taste</div>
+              </li>
+              <li class="flex items-center">
+                <div>1 tablespoon of butter or oil</div>
+              </li>
+              <li class="flex items-center">
+                <div>
+                  Optional fillings: cheese, diced vegetables, cooked meats,
+                  herbs
+                </div>
+              </li>
+            </ul>
+          </div>
 
-          <ol>
-            <li>
-              <b>Beat the eggs: </b>In a bowl, beat the eggs with a pinch of
-              salt and pepper until they are well mixed. You can add a
-              tablespoon of water or milk for a fluffier texture.
-            </li>
-            <li>
-              <b>Heat the pan:</b> Place a non-stick frying pan over medium heat
-              and add butter or oil.
-            </li>
-            <li>
-              <b>Cook the omelette: </b>Once the butter is melted and bubbling,
-              pour in the eggs. Tilt the pan to ensure the eggs evenly coat the
-              surface.
-            </li>
-            <li>
-              <b>Add fillings (optional):</b> When the eggs begin to set at the
-              edges but are still slightly runny in the middle, sprinkle your
-              chosen fillings over one half of the omelette.
-            </li>
-            <li>
-              <b>Fold and serve: </b>As the omelette continues to cook,
-              carefully lift one edge and fold it over the fillings. Let it cook
-              for another minute, then slide it onto a plate.
-            </li>
-            <li>
-              <b>Enjoy:</b>Serve hot, with additional salt and pepper if needed.
-            </li>
-            
-          </ol>
-        </div>
-        <hr class="my-8  border-white-coffee" />
-        <div>
-          <h2 class="text-brandy-red text-[28px]">Nutrition</h2>
+          <hr class="my-8 border-white-coffee" />
 
-          <p class="py-6">The table below shows nutritional values per serving without the
-          additional fillings.</p>
+          <div>
+            <h2 class="text-brandy-red text-[28px] font-young_serif font-bold">
+              Instructions
+            </h2>
 
-          <table class="table-auto w-full">
-            <tr>
-              <td class="border-b-[1px] border-white-coffee px-8 py-2">Calories</td>
-              <td class="border-b-[1px] border-white-coffee px-8 py-2 text-brandy-red font-bold">277kcal</td>
-            </tr>
-            <tr>
-              <td class="border-b-[1px] border-white-coffee px-8 py-2">Carbs</td>
-              <td class="border-b-[1px] border-white-coffee px-8 py-2 text-brandy-red font-bold">0g</td>
-            </tr>
-            <tr>
-              <td class="border-b-[1px] border-white-coffee px-8 py-2">Protein</td>
-              <td class="border-b-[1px] border-white-coffee px-8 py-2 text-brandy-red font-bold">20g</td>
-            </tr>
-            <tr>
-              <td class="px-8 py-2">Fat</td>
-              <td class="px-8 py-2 text-brandy-red font-bold">22g</td>
-            </tr>
-          </table>
-        </div>
+            <ol
+              class="custom-counter flex flex-col gap-2  pt-6 marker:text-dark-raspberry marker:font-bold"
+            >
+              <li class="flex">
+                <div>
+                  <strong>Beat the eggs:</strong> In a bowl, beat the eggs with
+                  a pinch of salt and pepper until they are well mixed. You can
+                  add a tablespoon of water or milk for a fluffier texture.
+                </div>
+              </li>
+              <li class="flex">
+                <div>
+                  <strong>Heat the pan:</strong> Place a non-stick frying pan
+                  over medium heat and add butter or oil.
+                </div>
+              </li>
+              <li class="flex">
+                <div>
+                  <strong>Cook the omelette:</strong> Once the butter is melted
+                  and bubbling, pour in the eggs. Tilt the pan to ensure the
+                  eggs evenly coat the surface.
+                </div>
+              </li>
+              <li class="flex">
+                <div>
+                  <strong>Add fillings (optional):</strong> When the eggs begin
+                  to set at the edges but are still slightly runny in the
+                  middle, sprinkle your chosen fillings over one half of the
+                  omelette.
+                </div>
+              </li>
+              <li class="flex">
+                <div>
+                  <strong>Fold and serve:</strong> As the omelette continues to
+                  cook, carefully lift one edge and fold it over the fillings.
+                  Let it cook for another minute, then slide it onto a plate.
+                </div>
+              </li>
+              <li class="flex">
+                <div>
+                  <strong>Enjoy:</strong> Serve hot, with additional salt and
+                  pepper if needed.
+                </div>
+              </li>
+            </ol>
+          </div>
+          <hr class="my-8 border-white-coffee" />
+          <div>
+            <h2 class="text-brandy-red text-[28px] font-young_serif font-bold">
+              Nutrition
+            </h2>
 
-        <div class="attribution mt-8">
-          Challenge by
-          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-            >Frontend Mentor</a
-          >. Coded by <a href="https://github.com/GIMDZ">GIMDZ</a>.
+            <p class="py-6">
+              The table below shows nutritional values per serving without the
+              additional fillings.
+            </p>
+
+            <table class="table-auto w-full">
+              <tr>
+                <td class="border-b-[1px] border-white-coffee px-8 py-2">
+                  Calories
+                </td>
+                <td
+                  class="border-b-[1px] border-white-coffee px-8 py-2 text-brandy-red font-bold"
+                >
+                  277kcal
+                </td>
+              </tr>
+              <tr>
+                <td class="border-b-[1px] border-white-coffee px-8 py-2">
+                  Carbs
+                </td>
+                <td
+                  class="border-b-[1px] border-white-coffee px-8 py-2 text-brandy-red font-bold"
+                >
+                  0g
+                </td>
+              </tr>
+              <tr>
+                <td class="border-b-[1px] border-white-coffee px-8 py-2">
+                  Protein
+                </td>
+                <td
+                  class="border-b-[1px] border-white-coffee px-8 py-2 text-brandy-red font-bold"
+                >
+                  20g
+                </td>
+              </tr>
+              <tr>
+                <td class="px-8 py-2">Fat</td>
+                <td class="px-8 py-2 text-brandy-red font-bold">22g</td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="attribution mt-8">
+            Challenge by
+            <a
+              href="https://www.frontendmentor.io?ref=challenge"
+              target="_blank"
+              >Frontend Mentor</a
+            >. Coded by <a href="https://github.com/GIMDZ">GIMDZ</a>.
+          </div>
         </div>
       </div>
     </section>

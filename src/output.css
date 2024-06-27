@@ -559,18 +559,9 @@ video {
   margin-right: auto;
 }
 
-.my-28 {
-  margin-top: 7rem;
-  margin-bottom: 7rem;
-}
-
 .my-8 {
   margin-top: 2rem;
   margin-bottom: 2rem;
-}
-
-.mb-10 {
-  margin-bottom: 2.5rem;
 }
 
 .mb-6 {
@@ -581,12 +572,12 @@ video {
   margin-top: 2rem;
 }
 
-.table {
-  display: table;
+.flex {
+  display: flex;
 }
 
-.w-1\/2 {
-  width: 50%;
+.table {
+  display: table;
 }
 
 .w-full {
@@ -597,20 +588,36 @@ video {
   table-layout: auto;
 }
 
+.list-inside {
+  list-style-position: inside;
+}
+
+.list-disc {
+  list-style-type: disc;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
 .rounded-3xl {
   border-radius: 1.5rem;
 }
 
 .rounded-xl {
   border-radius: 0.75rem;
-}
-
-.border {
-  border-width: 1px;
-}
-
-.border-b-2 {
-  border-bottom-width: 2px;
 }
 
 .border-b-\[1px\] {
@@ -636,17 +643,21 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.p-10 {
-  padding: 2.5rem;
+.p-0 {
+  padding: 0px;
 }
 
 .p-5 {
   padding: 1.25rem;
 }
 
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
+.p-8 {
+  padding: 2rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .py-2 {
@@ -659,9 +670,16 @@ video {
   padding-bottom: 1.5rem;
 }
 
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
+.pb-6 {
+  padding-bottom: 1.5rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
+}
+
+.pt-6 {
+  padding-top: 1.5rem;
 }
 
 .font-outfit {
@@ -676,8 +694,8 @@ video {
   font-size: 28px;
 }
 
-.text-\[40px\] {
-  font-size: 40px;
+.text-\[36px\] {
+  font-size: 36px;
 }
 
 .text-xl {
@@ -687,6 +705,14 @@ video {
 
 .font-bold {
   font-weight: 700;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.leading-none {
+  line-height: 1;
 }
 
 .text-brandy-red {
@@ -712,9 +738,10 @@ video {
 /* Fonts */
 
 @font-face {
-  font-family: 'Outfit';
+  font-family: "Outfit";
 
-  src: url('../assets/fonts/outfit/static/Outfit-Regular.ttf') format('truetype');
+  src: url("../assets/fonts/outfit/static/Outfit-Regular.ttf")
+    format("truetype");
 
   font-weight: normal;
 
@@ -722,9 +749,10 @@ video {
 }
 
 @font-face {
-  font-family: 'Young Serif';
+  font-family: "Young Serif";
 
-  src: url('../assets/fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
+  src: url("../assets/fonts/young-serif/YoungSerif-Regular.ttf")
+    format("truetype");
 
   font-weight: normal;
 
@@ -737,7 +765,9 @@ video {
   1. Use a more-intuitive box-sizing model.
 */
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -764,7 +794,11 @@ body {
     5. Improve media defaults
   */
 
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
@@ -773,7 +807,10 @@ img, picture, video, canvas, svg {
     6. Remove built-in form typography styles
   */
 
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 
@@ -781,7 +818,13 @@ input, button, textarea, select {
     7. Avoid text overflows
   */
 
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
 }
 
@@ -789,6 +832,84 @@ p, h1, h2, h3, h4, h5, h6 {
     8. Create a root stacking context
   */
 
-#root, #__next {
+#root,
+#__next {
   isolation: isolate;
+}
+
+ol.custom-counter {
+  counter-reset: item;
+}
+
+ol.custom-counter li::before {
+  counter-increment: item;
+  content: counter(item) ". ";
+  font-weight: bold;
+  color: #7A284E;
+  margin-right: 1rem;
+  flex: none;
+}
+
+ul.custom-disc {
+  list-style: none;
+}
+
+ul.custom-disc li::before {
+  content: '•';
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  flex: none;
+  color: #7A284E;
+}
+
+.marker\:font-bold *::marker {
+  font-weight: 700;
+}
+
+.marker\:text-dark-raspberry *::marker {
+  color: rgb(122 40 78 );
+}
+
+.marker\:font-bold::marker {
+  font-weight: 700;
+}
+
+.marker\:text-dark-raspberry::marker {
+  color: rgb(122 40 78 );
+}
+
+@media (min-width: 768px) {
+  .md\:my-28 {
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+  }
+
+  .md\:w-1\/2 {
+    width: 50%;
+  }
+
+  .md\:w-full {
+    width: 100%;
+  }
+
+  .md\:rounded-xl {
+    border-radius: 0.75rem;
+  }
+
+  .md\:p-10 {
+    padding: 2.5rem;
+  }
+
+  .md\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .md\:pt-10 {
+    padding-top: 2.5rem;
+  }
+
+  .md\:text-\[40px\] {
+    font-size: 40px;
+  }
 }
