@@ -87,6 +87,8 @@ h6 {
   isolation: isolate;
 }
 
+/* Custom styles for the bullets of the lists */
+
 ol.custom-counter {
   counter-reset: item;
 }
