@@ -23,8 +23,8 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/GIMDZ/FM-Recipe-page)
-- Live Site URL: [Add live site URL here](https://fm-recipe-page-mu.vercel.app/)
+- Solution URL: [Solution URL here](https://github.com/GIMDZ/FM-Recipe-page)
+- Live Site URL: [Live site URL here](https://fm-recipe-page-mu.vercel.app/)
 
 ## My process
 
